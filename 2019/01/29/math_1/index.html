@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,7 +72,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '6.7.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -96,24 +96,27 @@
 
 
 
-  <meta name="description" content="kouliwei&apos;s  personal website">
+  <meta name="description" content="（1）矩阵的秩和非零特征值个数未必相等 （2）任意的n阶方阵，都有r(A)&amp;gt;=非零特征值个数 （3）如果矩阵可以对角化，则r(A)=非零特征值个数（充分条件） （4）实对称矩阵一定可以对角化，所以一定则r(A)=非零特征值个数 （5）对称阵A为正定的充分必要条件是：A的特征值全为正 （6）对称阵A为正定的充分必要条件是：A的各阶顺序主子式都为正。 （7）任意阵A为正定的充分必要条件是：A合同">
+<meta name="keywords" content="矩阵知识">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test_my_site">
-<meta property="og:url" content="http://yoursite.com/2019/01/24/test-my-site/index.html">
+<meta property="og:title" content="矩阵对角化">
+<meta property="og:url" content="http://yoursite.com/2019/01/29/math_1/index.html">
 <meta property="og:site_name" content="kouliwei">
-<meta property="og:description" content="kouliwei&apos;s  personal website">
+<meta property="og:description" content="（1）矩阵的秩和非零特征值个数未必相等 （2）任意的n阶方阵，都有r(A)&amp;gt;=非零特征值个数 （3）如果矩阵可以对角化，则r(A)=非零特征值个数（充分条件） （4）实对称矩阵一定可以对角化，所以一定则r(A)=非零特征值个数 （5）对称阵A为正定的充分必要条件是：A的特征值全为正 （6）对称阵A为正定的充分必要条件是：A的各阶顺序主子式都为正。 （7）任意阵A为正定的充分必要条件是：A合同">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-24T07:46:30.018Z">
+<meta property="og:image" content="https://app.yinxiang.com/shard/s27/res/daad4136-a8a4-487e-83f2-52bd59f218c1/Image.png">
+<meta property="og:updated_time" content="2019-01-29T14:18:08.748Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test_my_site">
-<meta name="twitter:description" content="kouliwei&apos;s  personal website">
+<meta name="twitter:title" content="矩阵对角化">
+<meta name="twitter:description" content="（1）矩阵的秩和非零特征值个数未必相等 （2）任意的n阶方阵，都有r(A)&amp;gt;=非零特征值个数 （3）如果矩阵可以对角化，则r(A)=非零特征值个数（充分条件） （4）实对称矩阵一定可以对角化，所以一定则r(A)=非零特征值个数 （5）对称阵A为正定的充分必要条件是：A的特征值全为正 （6）对称阵A为正定的充分必要条件是：A的各阶顺序主子式都为正。 （7）任意阵A为正定的充分必要条件是：A合同">
+<meta name="twitter:image" content="https://app.yinxiang.com/shard/s27/res/daad4136-a8a4-487e-83f2-52bd59f218c1/Image.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/24/test-my-site/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/29/math_1/">
 
 
 
@@ -123,7 +126,7 @@
   };
 </script>
 
-  <title>test_my_site | kouliwei</title>
+  <title>矩阵对角化 | kouliwei</title>
   
 
 
@@ -301,9 +304,6 @@
   
 
   
-    
-
-  
 
   
 </nav>
@@ -324,6 +324,9 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+            
+
+          
           <div id="content" class="content">
             
 
@@ -343,7 +346,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/24/test-my-site/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/29/math_1/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="koukou">
@@ -360,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test_my_site
+          <h1 class="post-title" itemprop="name headline">矩阵对角化
 
               
             
@@ -386,12 +389,34 @@
                 
               
 
-              <time title="创建时间：2019-01-24 15:46:30" itemprop="dateCreated datePublished" datetime="2019-01-24T15:46:30+08:00">2019-01-24</time>
+              <time title="创建时间：2019-01-29 12:12:57 / 修改时间：22:18:08" itemprop="dateCreated datePublished" datetime="2019-01-29T12:12:57+08:00">2019-01-29</time>
             
 
+            
+              
+
+              
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/数学相关/" itemprop="url" rel="index"><span itemprop="name">数学相关</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -421,7 +446,19 @@
       
 
       
-        
+        <p>（1）矩阵的秩和非零特征值个数未必相等</p>
+<p>（2）任意的n阶方阵，都有r(A)&gt;=非零特征值个数</p>
+<p>（3）如果矩阵可以对角化，则r(A)=非零特征值个数（充分条件）</p>
+<p>（4）实对称矩阵一定可以对角化，所以一定则r(A)=非零特征值个数</p>
+<p>（5）对称阵A为正定的充分必要条件是：A的特征值全为正</p>
+<p>（6）对称阵A为正定的充分必要条件是：A的各阶顺序主子式都为正。</p>
+<p>（7）任意阵A为正定的充分必要条件是：A合同于单位阵。</p>
+<p>矩阵A可对角化的充要条件是A有n个线性无关的特征向量</p>
+<ol>
+<li>如果矩阵A的特征值互不相同，则A必可对角化，因为属于不同特征值的特征向量是线性无关的。</li>
+<li>n阶方阵A可对角化的充分必要条件是对每一个i重的特征值，其对应的线性无关的特征向量个数为i，也即<img src="https://app.yinxiang.com/shard/s27/res/daad4136-a8a4-487e-83f2-52bd59f218c1/Image.png" alt="img"></li>
+</ol>
+
       
     </div>
 
@@ -442,6 +479,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/矩阵知识/" rel="tag"># 矩阵知识</a>
+          
+        </div>
+      
 
       
       
@@ -451,15 +494,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/24/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/29/hardware-2/" rel="prev" title="电路PCB设计相关">
+                电路PCB设计相关 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -520,14 +563,52 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -545,7 +626,7 @@
                   
                     
                   
-                  <a href="https://github.com/yourname" title="GitHub &rarr; https://github.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="https://github.com/kouliwei" title="GitHub &rarr; https://github.com/kouliwei" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -556,7 +637,7 @@
                   
                     
                   
-                  <a href="mailto:yourname@gmail.com" title="E-Mail &rarr; mailto:yourname@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:koukou@zju.edu.cn" title="E-Mail &rarr; mailto:koukou@zju.edu.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                 </span>
               
             </div>
@@ -621,15 +702,9 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
 
 
 
@@ -727,7 +802,9 @@
   
 
 
-  <script src="/js/src/schemes/muse.js?v=6.7.0"></script>
+  <script src="/js/src/affix.js?v=6.7.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
 
 
 
