@@ -16,7 +16,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="github 常见命令汇总仓库初始化+密钥生成// configurate ssh git init git config –global user.name  myname git config –global user.email  “myemail” ssh-keygen -t rsa -C “myemail” 远程仓库拉取git pull = git fetch + git merge g">
+  <meta name="description" content="github 常见命令汇总仓库初始化+密钥生成// configurate ssh git init git config —global user.name  myname git config —global user.email  “myemail” ssh-keygen -t rsa -C “myemail” 远程仓库拉取git pull = git fetch + git merge g">
 <meta name="keywords" content="github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github 常见命令">
 <meta property="og:url" content="http://yoursite.com/2019/01/29/github_1/index.html">
 <meta property="og:site_name" content="kouliwei">
-<meta property="og:description" content="github 常见命令汇总仓库初始化+密钥生成// configurate ssh git init git config –global user.name  myname git config –global user.email  “myemail” ssh-keygen -t rsa -C “myemail” 远程仓库拉取git pull = git fetch + git merge g">
+<meta property="og:description" content="github 常见命令汇总仓库初始化+密钥生成// configurate ssh git init git config —global user.name  myname git config —global user.email  “myemail” ssh-keygen -t rsa -C “myemail” 远程仓库拉取git pull = git fetch + git merge g">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-01-31T03:39:47.885Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github 常见命令">
-<meta name="twitter:description" content="github 常见命令汇总仓库初始化+密钥生成// configurate ssh git init git config –global user.name  myname git config –global user.email  “myemail” ssh-keygen -t rsa -C “myemail” 远程仓库拉取git pull = git fetch + git merge g">
+<meta name="twitter:description" content="github 常见命令汇总仓库初始化+密钥生成// configurate ssh git init git config —global user.name  myname git config —global user.email  “myemail” ssh-keygen -t rsa -C “myemail” 远程仓库拉取git pull = git fetch + git merge g">
 
 
 
@@ -161,7 +161,7 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
@@ -172,7 +172,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -458,8 +458,8 @@
       
         <h1 id="github-常见命令汇总"><a href="#github-常见命令汇总" class="headerlink" title="github 常见命令汇总"></a>github 常见命令汇总</h1><h2 id="仓库初始化-密钥生成"><a href="#仓库初始化-密钥生成" class="headerlink" title="仓库初始化+密钥生成"></a>仓库初始化+密钥生成</h2><p>// configurate ssh</p>
 <p>git init</p>
-<p>git config –global user.name  myname</p>
-<p>git config –global user.email  “myemail”</p>
+<p>git config —global user.name  myname</p>
+<p>git config —global user.email  “myemail”</p>
 <p>ssh-keygen -t rsa -C “myemail”</p>
 <h2 id="远程仓库拉取"><a href="#远程仓库拉取" class="headerlink" title="远程仓库拉取"></a>远程仓库拉取</h2><p>git pull = git fetch + git merge</p>
 <p>git pull &lt;远程仓库名&gt;   &lt;远程分支名&gt;：&lt;本地分支名&gt;</p>
@@ -471,9 +471,9 @@
 <p>eg: git remote add origin <a href="mailto:git@github.com:kouliwei/paperofkou.git" target="_blank" rel="noopener">git@github.com:kouliwei/STM32F4.git</a></p>
 <p>git remote rm <name>:删除远程仓库关联</name></p>
 <h2 id="仓库版本回退"><a href="#仓库版本回退" class="headerlink" title="仓库版本回退"></a>仓库版本回退</h2><p>git log                         查询提交历史</p>
-<p>git reset  –hard HEAD^        回退到上一版本</p>
-<p>git reset  –hard HEAD_100        回退到前100版本</p>
-<p>git reset –hard commit _id        回退到指定版本</p>
+<p>git reset  —hard HEAD^        回退到上一版本</p>
+<p>git reset  —hard HEAD_100        回退到前100版本</p>
+<p>git reset —hard commit _id        回退到指定版本</p>
 <p>如果用户先指到了以前的版本，又突然关机找不到最新的commit_id 无法回退到最新的版本该怎么办，github可以通过 <strong>git reflog</strong> 来查询回退到各个版本</p>
 
       
@@ -511,18 +511,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/29/hardware-2/" rel="next" title="电路PCB设计相关">
-                <i class="fa fa-chevron-left"></i> 电路PCB设计相关
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/31/nonlinear control/" rel="prev" title="非线性系统">
-                非线性系统 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/29/hardware/" rel="prev" title="串口波特率设置">
+                串口波特率设置 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -879,7 +875,24 @@
   
 
 
-  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
@@ -904,6 +917,13 @@
   
 
   
+  
+
+  
+  
+
+  
+
 
   
 
