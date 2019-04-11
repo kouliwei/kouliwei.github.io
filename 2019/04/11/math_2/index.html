@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="kouliwei">
 <meta property="og:description" content="线性方程组的求解是试图找到向量$x_{n\times 1}$ 使其满足 $A_{m\times n}x_{n\times1}=b_{n\times1}$。根据$b$ 是否为零向量。将线性方程组分为两类：齐次线性方程组（$b=0$）和非齐次线性方程组 ($b \neq 0$)。下面分别给予讨论。 齐次线性方程组由公式可知，齐次线性方程组肯定有解为$0_{n\times1}$, 那么在什么样的情况下它">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-11T03:10:59.039Z">
+<meta property="og:updated_time" content="2019-04-11T05:28:57.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线性方程组的求解问题">
 <meta name="twitter:description" content="线性方程组的求解是试图找到向量$x_{n\times 1}$ 使其满足 $A_{m\times n}x_{n\times1}=b_{n\times1}$。根据$b$ 是否为零向量。将线性方程组分为两类：齐次线性方程组（$b=0$）和非齐次线性方程组 ($b \neq 0$)。下面分别给予讨论。 齐次线性方程组由公式可知，齐次线性方程组肯定有解为$0_{n\times1}$, 那么在什么样的情况下它">
@@ -387,7 +387,7 @@
                 
               
 
-              <time title="创建时间：2019-04-11 09:12:57 / 修改时间：11:10:59" itemprop="dateCreated datePublished" datetime="2019-04-11T09:12:57+08:00">2019-04-11</time>
+              <time title="创建时间：2019-04-11 09:12:57 / 修改时间：13:28:57" itemprop="dateCreated datePublished" datetime="2019-04-11T09:12:57+08:00">2019-04-11</time>
             
 
             
@@ -464,8 +464,28 @@
 <p>对于（3），尽管方程组有无数解，但我们希望能够找到一组解，使得$\dfrac{1}{2}||x||^2$尽可能的小。这样的解称为极小范数解。求解过程如下：</p>
 <p>首先这是一个包含等式约束$Ax=b$ 的优化问题，构造拉格朗日方程，变成无约束优化问题。</p>
 <p>令$L=\dfrac{1}{2}x^Tx+\lambda^T(Ax-b)$, 分别对$x$和$\lambda$求偏导可得：</p>
-<p>​                                                    $\dfrac{\partial L }{\partial x}=x+A^T\lambda$=0 (1),    $\dfrac{\partial L }{\partial \lambda}=Ax-b$=0 (2)</p>
+<p>​                                                    $\dfrac{\partial L }{\partial x}=x+A^T\lambda​$=0 (1),    $\dfrac{\partial L }{\partial \lambda}=Ax-b​$=0 (2)</p>
 <p>由 (1) 得$x=-A^T\lambda$, 代入 (2) 得$\lambda=-(AA^T)^{-1}b$, 再回代到 (1) 得$x=A^T(AA^T)^{-1}b$, 该式为欠定方程的极小范数解。</p>
+<hr>
+<p>相关数学技巧：矩阵的微分可以引入矩阵的迹来方便计算。对于方阵$A_{n\times n}$，矩阵的迹定义为对角元素的和，即为：$tr(A)=\Sigma a_{ii}$.  </p>
+<p><strong>矩阵的迹相关公式有</strong>：</p>
+<p>（1） $tr(AB)=tr(BA)​$;</p>
+<p>（2）$tr(ABC)=tr(BCA)=tr(CAB)$;</p>
+<p>（3）$tr(A)=tr(A^T)$;</p>
+<p>（4）$tr(aA+bB)=atr(A)+btr(B)​$;</p>
+<p><strong>矩阵求导的相关公式有：</strong></p>
+<p>（1）$\dfrac{\partial }{\partial A}tr(AB)= B^T$;</p>
+<p>（2）$\dfrac{\partial }{\partial A^T}tr(AB)= B$;</p>
+<p>（3）$\dfrac{\partial }{\partial A}tr(A^TA)=2A $;</p>
+<p>（4）$\dfrac{\partial }{\partial A^T}tr(A^TA)=2A^T $;</p>
+<p>（5）$\dfrac{\partial }{\partial A }tr(ABA^TC)=CAB + (BA^TC)^T=CAB + C^TAB^T$;</p>
+<p>（5）$\dfrac{\partial }{\partial A}tr(ABCA^TD)=DABC + (BCA^TD)^T=DABC + D^TAC^TB^T$;</p>
+<p>（计算技巧，若求相对于A的偏导，结果有两部分：</p>
+<p>第一部分从$A^T$后一项往后写，结束后再从第一项写起，一直写到$A^T$的前一项为止；</p>
+<p>第二部分从A的后一项往后写，结束后再从第一项写起，一直写到$A$的前一项为止，然后再对其转置.</p>
+<p>（计算技巧，若求相对于$A^T$的偏导，结果有两部分：</p>
+<p>第一部分从$A$后一项往后写，结束后再从第一项写起，一直写到$A$的前一项为止；</p>
+<p>第二部分从$A^T$ 的后一项往后写，结束后再从第一项写起，一直写到​$A^T$ 的前一项为止，然后再对其转置.）；</p>
 
       
     </div>
