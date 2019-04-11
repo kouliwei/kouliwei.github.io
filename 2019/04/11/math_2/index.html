@@ -96,25 +96,25 @@
 
 
 
-  <meta name="description" content="In the note, the term holonomic is synonymous with the completely integrable, and nonintegrable is synonymous with nonholomonic [1] (备注：完整约束就是完全可积约束，非完整约束就是不可积约束) 完整约束（holonomic constraint）：A constrai">
-<meta name="keywords" content="nonholonomic constraints">
+  <meta name="description" content="线性方程组的求解是试图找到向量$x_{n\times 1}$ 使其满足 $A_{m\times n}x_{n\times1}=b_{n\times1}$。根据$b$ 是否为零向量。将线性方程组分为两类：齐次线性方程组（$b=0$）和非齐次线性方程组 ($b \neq 0$)。下面分别给予讨论。 齐次线性方程组由公式可知，齐次线性方程组肯定有解为$0_{n\times1}$, 那么在什么样的情况下它">
+<meta name="keywords" content="方程组求解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nonholonomic constraints">
-<meta property="og:url" content="http://yoursite.com/2019/02/24/holonomoc system/index.html">
+<meta property="og:title" content="线性方程组的求解问题">
+<meta property="og:url" content="http://yoursite.com/2019/04/11/math_2/index.html">
 <meta property="og:site_name" content="kouliwei">
-<meta property="og:description" content="In the note, the term holonomic is synonymous with the completely integrable, and nonintegrable is synonymous with nonholomonic [1] (备注：完整约束就是完全可积约束，非完整约束就是不可积约束) 完整约束（holonomic constraint）：A constrai">
+<meta property="og:description" content="线性方程组的求解是试图找到向量$x_{n\times 1}$ 使其满足 $A_{m\times n}x_{n\times1}=b_{n\times1}$。根据$b$ 是否为零向量。将线性方程组分为两类：齐次线性方程组（$b=0$）和非齐次线性方程组 ($b \neq 0$)。下面分别给予讨论。 齐次线性方程组由公式可知，齐次线性方程组肯定有解为$0_{n\times1}$, 那么在什么样的情况下它">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-24T14:35:21.590Z">
+<meta property="og:updated_time" content="2019-04-11T03:10:59.039Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nonholonomic constraints">
-<meta name="twitter:description" content="In the note, the term holonomic is synonymous with the completely integrable, and nonintegrable is synonymous with nonholomonic [1] (备注：完整约束就是完全可积约束，非完整约束就是不可积约束) 完整约束（holonomic constraint）：A constrai">
+<meta name="twitter:title" content="线性方程组的求解问题">
+<meta name="twitter:description" content="线性方程组的求解是试图找到向量$x_{n\times 1}$ 使其满足 $A_{m\times n}x_{n\times1}=b_{n\times1}$。根据$b$ 是否为零向量。将线性方程组分为两类：齐次线性方程组（$b=0$）和非齐次线性方程组 ($b \neq 0$)。下面分别给予讨论。 齐次线性方程组由公式可知，齐次线性方程组肯定有解为$0_{n\times1}$, 那么在什么样的情况下它">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/24/holonomoc system/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/11/math_2/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>nonholonomic constraints | kouliwei</title>
+  <title>线性方程组的求解问题 | kouliwei</title>
   
 
 
@@ -344,7 +344,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/24/holonomoc system/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/11/math_2/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="koukou">
@@ -361,7 +361,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">nonholonomic constraints
+          <h1 class="post-title" itemprop="name headline">线性方程组的求解问题
 
               
             
@@ -387,7 +387,7 @@
                 
               
 
-              <time title="创建时间：2019-02-24 12:12:57 / 修改时间：22:35:21" itemprop="dateCreated datePublished" datetime="2019-02-24T12:12:57+08:00">2019-02-24</time>
+              <time title="创建时间：2019-04-11 09:12:57 / 修改时间：11:10:59" itemprop="dateCreated datePublished" datetime="2019-04-11T09:12:57+08:00">2019-04-11</time>
             
 
             
@@ -444,17 +444,28 @@
       
 
       
-        <p>In the note, the term <em>holonomic</em> is synonymous with the <em>completely integrable</em>, and <em>nonintegrable</em> is synonymous with <em>nonholomonic</em> [1]</p>
-<p>(备注：完整约束就是完全可积约束，非完整约束就是不可积约束)</p>
-<h1 id="完整约束（holonomic-constraint）："><a href="#完整约束（holonomic-constraint）：" class="headerlink" title="完整约束（holonomic constraint）："></a>完整约束（holonomic constraint）：</h1><p>A constraint is said to be holonomic if it restricts the motion of a system to a smooth hypersurface of the configuration space. It will be convenient to adopt some language and notation from differential geometry, so we call this smooth hypersurface a manifold. Locally, a holonomic constraint can be represented as a set of algebraic constraints on the configuration space.</p>
-<p>$h_i(q)=0$, $i=1,…,k$</p>
-<p>The dimension of the manifold on which the motion of the system evolves is $n-k$</p>
-<p>(备注：由上可知，完整约束会影响系统的自由度)</p>
-<h1 id="普法夫约束（Pfaffian-constraints）"><a href="#普法夫约束（Pfaffian-constraints）" class="headerlink" title="普法夫约束（Pfaffian constraints）"></a>普法夫约束（Pfaffian constraints）</h1><p>A set of $k$ Pfaffian constraints are of the form $w_i(q)\dot q=0$, $i=1,…,k$ where the $w_i$ are linearly independent row vectors and $\dot q $ is a column vector.</p>
-<p>给定一个普法夫约束，如何判断它是否可积呢？如果存在函数 $h_i: R^n \rightarrow R$, $i=1,…,k$ 有 $h_i(q(t))=0$  $\Leftrightarrow$  $w_i(q(t))\dot q=0$  $i=1,…,k$  那么这个普法夫约束就是完整约束，也就是可积约束。但是这样的$h_i$ 很多情况下不易找出，如何在不找 $h_i$ 的情况下判别约束的可积性呢？Frobenius theoreom （弗贝尼斯定理）给出了基于李代数的充要条件，然而，即使通过弗贝尼斯定理判断出该系统是完整系统，该理论不能找到$h_i$ . 因此我们需要注意：该约束可积不意味着你可以把约束积分成 $h_i=0$ 这样的形式。 </p>
-<h1 id="弗贝尼斯定理-Frobenius-Theorem"><a href="#弗贝尼斯定理-Frobenius-Theorem" class="headerlink" title="弗贝尼斯定理(Frobenius Theorem)"></a>弗贝尼斯定理(Frobenius Theorem)</h1><p>If the system is smooth and the distribution is nonsingular, the the Frobenius theorem immediately characterizes integralibity: <em>A system is completely integral if and only if it is involutive</em>. </p>
-<p>involutive : every Lie bracket can be expressed as a linear combination of the system vector fields.</p>
-<p>[1] Planning Algorithm, 2006</p>
+        <p>线性方程组的求解是试图找到向量$x_{n\times 1}$ 使其满足 $A_{m\times n}x_{n\times1}=b_{n\times1}$。根据$b$ 是否为零向量。将线性方程组分为两类：齐次线性方程组（$b=0$）和非齐次线性方程组 ($b \neq 0$)。下面分别给予讨论。</p>
+<h1 id="齐次线性方程组"><a href="#齐次线性方程组" class="headerlink" title="齐次线性方程组"></a>齐次线性方程组</h1><p>由公式可知，齐次线性方程组肯定有解为$0_{n\times1}$, 那么在什么样的情况下它具有非零的解呢。</p>
+<p>（1）如果r(A) = n, A矩阵列向量线性无关，方程组只有$0_{n\times1}$; </p>
+<p>（2）如果r(A) &lt; n, A矩阵列向量线性相关，方程组有非零解，而且有无数的非零解。</p>
+<h1 id="非齐次线性方程组"><a href="#非齐次线性方程组" class="headerlink" title="非齐次线性方程组"></a>非齐次线性方程组</h1><p>非齐次线性方程组可能存在无解，唯一解和无穷多解得情况。一般引入增广矩阵来判定方程组的解。</p>
+<p>（1）如果 r(A)  = n &lt; r (A | b);  方程组不相容，意味着独立的约束条件&gt; 方程组的个数，方程组无解。</p>
+<p>（2）如果 r(A)  = r(A | b) = n; 方程组相容；独立的约束条件= 方程组的个数,方程组有唯一解。</p>
+<p>（2）如果 r(A)  = r(A | b) &lt; n; 方程组相容；独立的约束条件&lt; 方程组的个数,方程组有无穷解。</p>
+<p>对于（1），尽管方程组无解，但我们还是希望能够找到一组解，使得$||Ax-b||^2 $尽可能的小。这样的解称为最小二乘解。求解过程如下：</p>
+<p>令$J=(Ax-b)^T(Ax-b)​$, 相对$x​$的偏导可得：</p>
+<p>​                                                    $\dfrac{\partial J }{\partial x}=\dfrac{\partial }{\partial x}((Ax-b)^T(Ax-b))​$ </p>
+<p>​                                                            $=\dfrac{\partial }{\partial x}(x^TA^TAx-x^TA^Tb-b^TAx+b^Tb)​$ </p>
+<p>​                                                           $=\dfrac{\partial }{\partial x}tr(x^TA^TAx-x^TA^Tb-b^TAx+b^Tb)​$ </p>
+<p>​                                                           $=\dfrac{\partial }{\partial x}tr(x^TA^TAx)-                                                      \dfrac{\partial }{\partial x}tr(x^TA^Tb)-\dfrac{\partial }{\partial x}tr(b^TAx)​$</p>
+<p>​                                                           $=A^TAx + (x^TA^TA)^T-A^Tb-(b^TA)^T​$</p>
+<p>​                                                           $=2(A^TAx -A^Tb)​$</p>
+<p>令其等于0，可得$x=(A^TA)^{-1}A^T$. 该式为超定方程的最小二乘解。（备注，其实最小二乘解有无穷多个，这个是范数最小的最小二乘解，称之为极小范数最小二乘解）。</p>
+<p>对于（3），尽管方程组有无数解，但我们希望能够找到一组解，使得$\dfrac{1}{2}||x||^2$尽可能的小。这样的解称为极小范数解。求解过程如下：</p>
+<p>首先这是一个包含等式约束$Ax=b$ 的优化问题，构造拉格朗日方程，变成无约束优化问题。</p>
+<p>令$L=\dfrac{1}{2}x^Tx+\lambda^T(Ax-b)$, 分别对$x$和$\lambda$求偏导可得：</p>
+<p>​                                                    $\dfrac{\partial L }{\partial x}=x+A^T\lambda$=0 (1),    $\dfrac{\partial L }{\partial \lambda}=Ax-b$=0 (2)</p>
+<p>由 (1) 得$x=-A^T\lambda$, 代入 (2) 得$\lambda=-(AA^T)^{-1}b$, 再回代到 (1) 得$x=A^T(AA^T)^{-1}b$, 该式为欠定方程的极小范数解。</p>
 
       
     </div>
@@ -478,7 +489,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/nonholonomic-constraints/" rel="tag"># nonholonomic constraints</a>
+            <a href="/tags/方程组求解/" rel="tag"># 方程组求解</a>
           
         </div>
       
@@ -491,8 +502,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/13/english-1/" rel="next" title="英语常见口语">
-                <i class="fa fa-chevron-left"></i> 英语常见口语
+              <a href="/2019/02/24/holonomoc system/" rel="next" title="nonholonomic constraints">
+                <i class="fa fa-chevron-left"></i> nonholonomic constraints
               </a>
             
           </div>
@@ -500,10 +511,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/11/math_2/" rel="prev" title="线性方程组的求解问题">
-                线性方程组的求解问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -700,7 +707,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#完整约束（holonomic-constraint）："><span class="nav-number">1.</span> <span class="nav-text">完整约束（holonomic constraint）：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#普法夫约束（Pfaffian-constraints）"><span class="nav-number">2.</span> <span class="nav-text">普法夫约束（Pfaffian constraints）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#弗贝尼斯定理-Frobenius-Theorem"><span class="nav-number">3.</span> <span class="nav-text">弗贝尼斯定理(Frobenius Theorem)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#齐次线性方程组"><span class="nav-number">1.</span> <span class="nav-text">齐次线性方程组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#非齐次线性方程组"><span class="nav-number">2.</span> <span class="nav-text">非齐次线性方程组</span></a></li></ol></div>
             
 
           </div>
