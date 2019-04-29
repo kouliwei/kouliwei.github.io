@@ -98,5 +98,3 @@ Obj/	# 文件夹Obj整个包括的文件都不会被track
 （1）git rm -r --cached test.txt   //使得test.txt 不被track
 
 （2）重新提交  git add/git commit /git push ....
-
-test
