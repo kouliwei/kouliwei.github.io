@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="kouliwei">
 <meta property="og:description" content="何为矩阵的相似方阵$A$和方阵$B$相似是指存在可逆矩阵$P$,使得$P^{-1}AP=B$. 何为矩阵的正交相似方阵$A$和方阵$B$正交相似是指存在正交矩阵$Q$,使得$Q^TAQ=B$. 其中$QQ^T=I$ 正交相似的优点在于$Q$是正交矩阵，其逆和转置相同，便于计算。一个显然的问题是，什么样的矩阵可以正交相似于对角阵，理论表明，如果矩阵$A \in R^{n \times n}$,且其">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-10-08T03:03:46.077Z">
+<meta property="og:updated_time" content="2020-10-08T04:02:38.782Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="矩阵相关">
 <meta name="twitter:description" content="何为矩阵的相似方阵$A$和方阵$B$相似是指存在可逆矩阵$P$,使得$P^{-1}AP=B$. 何为矩阵的正交相似方阵$A$和方阵$B$正交相似是指存在正交矩阵$Q$,使得$Q^TAQ=B$. 其中$QQ^T=I$ 正交相似的优点在于$Q$是正交矩阵，其逆和转置相同，便于计算。一个显然的问题是，什么样的矩阵可以正交相似于对角阵，理论表明，如果矩阵$A \in R^{n \times n}$,且其">
@@ -387,7 +387,7 @@
                 
               
 
-              <time title="创建时间：2020-10-08 10:41:57 / 修改时间：11:03:46" itemprop="dateCreated datePublished" datetime="2020-10-08T10:41:57+08:00">2020-10-08</time>
+              <time title="创建时间：2020-10-08 10:41:57 / 修改时间：12:02:38" itemprop="dateCreated datePublished" datetime="2020-10-08T10:41:57+08:00">2020-10-08</time>
             
 
             
@@ -460,6 +460,26 @@
 <li>如果矩阵A的特征值互不相同，则A必可对角化，因为属于不同特征值的特征向量是线性无关的。</li>
 <li>n阶方阵A可对角化的充分必要条件是对每一个i重的特征值，其对应的线性无关的特征向量个数为i。</li>
 </ol>
+<hr>
+<h2 id="矩阵的奇异值分解"><a href="#矩阵的奇异值分解" class="headerlink" title="矩阵的奇异值分解"></a>矩阵的奇异值分解</h2><p>对于n阶实对称矩阵$A$，存在正交矩阵$Q$,使得 $Q^TAQ=diag(\lambda_1,\lambda_2,\cdots,\lambda_n)$,其中$\lambda_i$为矩阵$A$的特征值。但是对于实的非对称矩阵$A$,不存在上述的分解，但是存在两个正交矩阵$P$和$Q$,使得$P^TAQ$为对角矩阵，即为下面的<strong>正交对角分解定理</strong>。</p>
+<p><strong>定理1</strong> <em>设$A \in R^{n \times n}$非奇异，则存在正交矩阵$P$和$Q$,使得$P^TAQ=diag(\sigma_1,\sigma_2,\cdots,\sigma_n)$, 其中$\sigma_i &gt;0$.</em></p>
+<p>矩阵的的奇异值分解由以下定理给出:</p>
+<p><strong>定理2</strong> <em>设$A \in C^{m\times n}_r$,则存在$m$阶酉矩阵$U$和$n$阶酉矩阵$V$,使得：</em></p>
+<script type="math/tex; mode=display">
+\begin{equation}
+U^HAV = \begin{bmatrix}
+\Sigma & 0 \\
+0 & 0
+\end{bmatrix}
+\end{equation}</script><p><em>其中，$\Sigma = diag(\sigma_1,\sigma_2,\cdots,\sigma_r)$,而$\sigma_i$为矩阵$A$的全部非零奇异值。</em></p>
+<p>上式改写为</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+A = U\begin{bmatrix}
+\Sigma & 0 \\
+0 & 0
+\end{bmatrix}V^H
+\end{equation}</script><p>称上式为矩阵$A$的奇异值分解。</p>
 <hr>
 <h2 id="矩阵的秩和非零特征值个数的关系"><a href="#矩阵的秩和非零特征值个数的关系" class="headerlink" title="矩阵的秩和非零特征值个数的关系"></a>矩阵的秩和非零特征值个数的关系</h2><p>（1）矩阵的秩和非零特征值个数未必相等</p>
 <p>（2）任意的n阶方阵，都有r(A)&gt;=非零特征值个数</p>
@@ -705,7 +725,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#何为矩阵的相似"><span class="nav-number">1.</span> <span class="nav-text">何为矩阵的相似</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#何为矩阵的正交相似"><span class="nav-number">2.</span> <span class="nav-text">何为矩阵的正交相似</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实对称矩阵的性质："><span class="nav-number">2.1.</span> <span class="nav-text">实对称矩阵的性质：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵的秩和非零特征值个数的关系"><span class="nav-number">3.</span> <span class="nav-text">矩阵的秩和非零特征值个数的关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵正定的判定"><span class="nav-number">4.</span> <span class="nav-text">矩阵正定的判定</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#何为矩阵的相似"><span class="nav-number">1.</span> <span class="nav-text">何为矩阵的相似</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#何为矩阵的正交相似"><span class="nav-number">2.</span> <span class="nav-text">何为矩阵的正交相似</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实对称矩阵的性质："><span class="nav-number">2.1.</span> <span class="nav-text">实对称矩阵的性质：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵的奇异值分解"><span class="nav-number">3.</span> <span class="nav-text">矩阵的奇异值分解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵的秩和非零特征值个数的关系"><span class="nav-number">4.</span> <span class="nav-text">矩阵的秩和非零特征值个数的关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵正定的判定"><span class="nav-number">5.</span> <span class="nav-text">矩阵正定的判定</span></a></li></ol></div>
             
 
           </div>
